@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <input type="button" value='Нажать' onclick="plus()">
+    <script>
+        let plus = () => {
+            let mas = [];
+            let rb = true;
+            while (rb) {
+                let i = +prompt('Введите число:');
+                mas.push(i);
+                rb = i;
+            }
+            let count = 0;
+            for (i in mas) {
+                if (mas[i] > 0) {
+                    count = mas[i];
+                    console.log(mas[i]);
+                }
+            }
+            alert(count);
+        }
+
+    </script>
+</body>
+
+</html>
