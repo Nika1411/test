@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h3 style='color:rgb(13, 10, 41); font-family: fantasy;'>Введите числа и вычислите что больше</h3>
+    <input type="text" id='ch1'>
+    <input type="text" id='ch2'>
+    <input type="button" value="Вычислить" id='btn'>
+    <script>
+        let get = (name) => {
+            return document.getElementById(name);
+        }
+        let ch1 = get('ch1');
+        let ch2 = get('ch2');
+        let btn = get('btn');
+        let result;
+        btn.onclick = () => {
+            (ch1.value == ch2.value) ? result = `${ch1.value} = ${ch2.value}` : (ch1.value > ch2.value) ? result = `${ch1.value} > ${ch2.value}` : result = `${ch2.value} > ${ch1.value}`;
+            alert(result);
+        }
+    </script>
+</body>
+
+</html>
