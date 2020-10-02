@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <input type="text" id='result' disabled>
+    <script>
+        let ch1 = +prompt('Первое число=');
+        let ch2 = +prompt('Второе число=');
+        let result = document.getElementById('result');
+        (ch1 == ch2) ? result.value = `${ch1} = ${ch2}` : (ch1 > ch2) ? result.value = `${ch1} > ${ch2}` : result.value = `${ch2} > ${ch1}`;
+    </script>
+</body>
+
+</html>
